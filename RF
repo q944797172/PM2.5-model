@@ -108,13 +108,10 @@ scatter_plot(y_train,y_train_pred)
 print ('R2:',rf.score(X_train,y_train))
 print ('MSE',mean_squared_error(y_train,y_train_pred))
 print ('MAE',mean_absolute_error(y_train,y_train_pred))
-print ('Interpretability',explained_variance_score(y_train,y_train_pred))
-
 
 print ('R2:',rf.score(X_test,y_test))
 print ('MSE',mean_squared_error(y_test,y_test_pred))
 print ('MAE',mean_absolute_error(y_test,y_test_pred))
-print ('Interpretability',explained_variance_score(y_test,y_test_pred))
 
-pickle.dump(rf,open("dtrhvg.dat","wb"))
+pickle.dump(rf,open("RF.dat","wb"))
 
